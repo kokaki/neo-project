@@ -1,0 +1,9 @@
+version: '2'
+services:
+  apache_php:
+    build: apache_php
+    ports:
+     - 80:80
+    volumes:
+     - ./config/apache:/etc/apache2/sites-enabled
+     - ../:/var/www/html
