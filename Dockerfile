@@ -12,6 +12,6 @@ RUN apt update &&\
 COPY . /var/www/html/
 COPY .docker/config/apache/neo_vhost.conf /etc/apache2/sites-enabled/000-default.conf
 
-EXPOSE 80
+EXPOSE 80:80
 
 CMD ["apache2-foreground"]
